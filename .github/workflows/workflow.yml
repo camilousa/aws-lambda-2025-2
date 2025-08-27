@@ -48,7 +48,7 @@ jobs:
             aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
             aws-region: us-east-1
         
-      - name: Prueba AWS credentials listar buckets
-        run: aws s3 ls
+      - name: Copiar código a s3
+        run: aws s3 cp utils.py s3://script-2123/
       
    
